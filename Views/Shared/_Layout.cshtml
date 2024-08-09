@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" data-bs-theme="light">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"]</title>
+	<link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="~/StyleSheet.css" type="text/css" />
+</head>
+<body class="bg-body">
+	<header>
+		<div class="p-4 d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center">
+			<img src="~/Images/fox-logo-641x854.png" alt="Logo" class="fox-logo-index" />
+			@await Html.PartialAsync("_PartialNav")
+		</div>
+		<p class="text-center">Robert Fox</p>
+	</header>
+	<main>
+		<div class="container">@RenderBody()</div>
+	</main>
+	<footer>Footer</footer>
+	<script src="~/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous" async></script>
+	<script src="~/JavaScript.js" async></script>
+</body>
+</html>

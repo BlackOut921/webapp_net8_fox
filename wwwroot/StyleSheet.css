@@ -1,0 +1,49 @@
+﻿@charset "utf-8";
+
+:root {
+    --btn-hover-time: 0.25s;
+    --color-dark: rgb(50, 50, 50);
+    --color-burnt-sienna: rgb(237, 125, 95);
+    --color-sandy-brown: rgb(240, 163, 89);
+    --color-hunyadi-yellow: rgb(243, 190, 95);
+    --color-melon: rgb(240, 160, 148);
+    --color-tickle-me-pink: rgb(238, 134, 171);
+    --color-sky-magenta: rgb(230, 110, 181);
+    --color-blush: rgb(235, 90, 128);
+    --color-mulberry: rgb(209, 71, 138);
+    --color-debug: cornflowerblue;
+}
+
+*,
+*:before,
+*:after {
+    transition: 0.2s;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(240, 163, 89, 25%), rgb(209, 71, 138, 25%));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* navbar */
+.fox-nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: var(--color-dark);
+    border-bottom: 2px solid transparent;
+    transition: var(--btn-hover-time);
+}
+
+    .fox-nav-link:hover {
+        border-bottom: 2px solid orange;
+        font-weight: normal;
+    }
+
+.fox-logo-index {
+    width: min(15%, 200px);
+    height: auto;
+    display: inline-block;
+}
