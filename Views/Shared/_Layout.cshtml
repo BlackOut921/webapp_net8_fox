@@ -11,10 +11,10 @@
 <body class="bg-body">
 	<header>
 		<div class="p-4 d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center">
-			<img src="~/Images/fox-logo-641x854.png" alt="Logo" class="fox-logo-index" />
+			<img src="~/Images/fox-logo-641x854.png" alt="Logo" class="fox-logo-index observer-target observer-anim-slide-down" />
 			@await Html.PartialAsync("_PartialNav")
 		</div>
-		<p class="text-center">Robert Fox</p>
+		@RenderSection("PageHeader", false)
 	</header>
 	<main>
 		<div class="container">@RenderBody()</div>

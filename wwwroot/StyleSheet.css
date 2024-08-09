@@ -27,6 +27,33 @@ body {
     background-size: cover;
 }
 
+header {
+    height: 75vh;
+}
+
+.observer-target {
+    transition: 1.5s;
+}
+
+.observer-anim-slide-down {
+    position: relative;
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+    .observer-anim-slide-down.show {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+.observer-anim-fade-in {
+    opacity: 0;
+}
+
+    .observer-anim-fade-in.show {
+        opacity: 1;
+    }
+
 /* navbar */
 .fox-nav-link {
     text-decoration: none;
