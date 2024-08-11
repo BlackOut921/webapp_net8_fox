@@ -21,18 +21,27 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(to bottom, rgb(240, 163, 89, 25%), rgb(209, 71, 138, 25%));
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-header {
-    height: 75vh;
+/* observer */
+.observer-target {
+    transition: 1s;
 }
 
-.observer-target {
-    transition: 1.5s;
+.observer-anim-delay-1 {
+    transition-delay: 0.5s;
+}
+
+.observer-anim-delay-2 {
+    transition-delay: 0.75s;
+}
+
+.observer-anim-delay-3 {
+    transition-delay: 1s;
 }
 
 .observer-anim-slide-down {
