@@ -6,13 +6,15 @@ namespace webapp_net8_fox.Controllers
 	[AllowAnonymous]
 	public class HomeController : Controller
 	{
-		[HttpGet]
-		public IActionResult Index() => View();
+		//IActionResult=multiple ActionResult return types are possible in an action
 
 		[HttpGet]
-		public IActionResult About() => View();
+		public ActionResult Index() => View();
 
 		[HttpGet]
-		public IActionResult Contact() => View();
+		public ActionResult About() => View();
+
+		[HttpGet]
+		public ActionResult Contact() => View();
 	}
 }

@@ -9,20 +9,13 @@
 	<link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="~/StyleSheet.css" type="text/css" />
 </head>
-<body class="bg-body">
-	<header>
-		<div class="p-4 d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center">
-			<img src="~/Images/fox-logo-641x854.png" alt="Logo" class="fox-logo-index observer-target observer-anim-slide-down" />
-			@await Html.PartialAsync("_PartialNav")
-		</div>
-		@RenderSection("PageHeader", false)
+<body class="bg-body min-vh-100">
+	<header class="py-3">
+		<img src="~/Images/fox-logo-641x854.png" alt="Logo" class="fox-logo-index mb-2 observer-target observer-anim-slide-down" />
+		@await Html.PartialAsync("_PartialNav")
+		@RenderSection("PageHeader", false) 
 	</header>
-	<main>
-		<div class="container border-top border-dark observer-target observer-anim-fade-in observer-anim-delay-3">
-			@RenderBody()
-		</div>
-	</main>
-	<footer>Footer</footer>
+	<main class="p-3">@RenderBody()</main>
 	<script src="~/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous" async></script>
 	<script src="~/JavaScript.js" async></script>
 </body>
