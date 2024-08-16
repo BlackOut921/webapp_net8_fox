@@ -13,10 +13,11 @@
 	<header class="py-3">
 		<img src="~/Images/fox-logo-641x854.png" alt="Logo" class="fox-logo-index mb-2 observer-target observer-anim-slide-down" />
 		@await Html.PartialAsync("_PartialNav")
-		@RenderSection("PageHeader", false) 
+		@RenderSection("PageHeader", false)
 	</header>
-	<main class="p-3">@RenderBody()</main>
+	<main class="p-3 observer-target observer-anim-fade-in observer-anim-delay-3">@RenderBody()</main>
 	<script src="~/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous" async></script>
-	<script src="~/JavaScript.js" async></script>
+	<!--<script src="~/JavaScript.js" async></script>-->
+	<script src="~/TypeScript.js" async></script>
 </body>
 </html>
