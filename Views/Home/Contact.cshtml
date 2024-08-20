@@ -90,19 +90,19 @@
 	<form method="post" asp-controller="Home" asp-action="Contact" class="p-3">
 		<div class="mb-3">
 			<label asp-for="@Model.Name" class="form-label"></label>
-			<input type="text" asp-for="@Model.Name" class="form-control" value="_testName" required />
+			<input type="text" asp-for="@Model.Name" class="form-control" required />
 		</div>
 		<div class="mb-3">
 			<label asp-for="@Model.Email" class="form-label"></label>
-			<input type="email" asp-for="@Model.Email" class="form-control" value="email@email.com" required />
+			<input type="email" asp-for="@Model.Email" class="form-control" required />
 		</div>
 		<div class="mb-3">
 			<label asp-for="@Model.ProjectDetails" class="form-label"></label>
-			<textarea asp-for="@Model.ProjectDetails" class="form-control" value="_testProjectDetails"></textarea>
+			<textarea asp-for="@Model.ProjectDetails" class="form-control"></textarea>
 		</div>
 		<div class="mb-3">
 			<label asp-for="@Model.ProjectBudget" class="form-label"></label>
-			<input type="number" asp-for="@Model.ProjectBudget" class="form-control w-50" value="1" />
+			<input type="number" asp-for="@Model.ProjectBudget" class="form-control w-50" />
 		</div>
 		<div class="mb-3">
 			<label asp-for="@Model.ProjectDate" class="form-label"></label>

@@ -22,14 +22,17 @@ namespace webapp_net8_fox.Controllers
 		public ActionResult Contact() => View();
 
 		[HttpPost]
-		public JsonResult Contact(ContactModel model)
+		public ActionResult Contact(ContactModel model)
 		{
 			if(ModelState.IsValid)
 			{
 				//
 			}
 
-			return Json(model);
+			return RedirectToAction(nameof(ContactResult), model);
 		}
+
+		[HttpGet]
+		public ActionResult ContactResult(ContactModel model) => View(model);
 	}
 }

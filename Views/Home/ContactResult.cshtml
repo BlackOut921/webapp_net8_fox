@@ -1,0 +1,19 @@
+﻿@using webapp_net8_fox.Models
+@model ContactModel
+
+@{
+	ViewData["Title"] = "Contact Result";
+}
+
+<div class="container">
+	<h1 class="display-1">Contact Result</h1>
+	@if (Model != null)
+	{
+		<div class="p-2">@Model.Id</div>
+		<div class="p-2">@Model.Name</div>
+		<div class="p-2">@Model.Email</div>
+		<div class="p-2">@Model.ProjectDetails</div>
+		<div class="p-2">@Model.ProjectBudget</div>
+		<div class="p-2">@Model.ProjectDate</div>
+	}
+</div>
