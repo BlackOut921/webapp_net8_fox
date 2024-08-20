@@ -1,5 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using System.Text.Json;
+
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+
+using webapp_net8_fox.Models;
 
 namespace webapp_net8_fox.Controllers
 {
@@ -16,5 +20,16 @@ namespace webapp_net8_fox.Controllers
 
 		[HttpGet]
 		public ActionResult Contact() => View();
+
+		[HttpPost]
+		public JsonResult Contact(ContactModel model)
+		{
+			if(ModelState.IsValid)
+			{
+				//
+			}
+
+			return Json(model);
+		}
 	}
 }
