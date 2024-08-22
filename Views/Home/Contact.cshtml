@@ -9,83 +9,42 @@
 	<h1 class="display-1">Contact</h1>
 	<p>Got a project in mind?</p>
 	<p>Use the form to give me as much detail as possible and I’ll get back to you as soon as I can</p>
-	<h2 class="display-2">FAQ</h2>
-	<p>Before sending me a message, here are some things you might want to know</p>
-	<div class="accordion accordion-flush mb-3" id="faqAccordion">
-		<div class="accordion-item">
-			<h3 class="accordion-header">
-				<button type="button" class="accordion-button"
-						data-bs-toggle="collapse" data-bs-target="#faqOne"
-						aria-expanded="true" aria-controls="faqOne">
-					What timezone are you in?
-				</button>
-			</h3>
-			<div class="accordion-collapse collapse show" id="faqOne" data-bs-parent="#faqAccordion">
-				<div class="accordion-body">
-					I live in New York so EST (UTC-5)
-				</div>
-			</div>
-		</div>
-		<div class="accordion-item">
-			<h3 class="accordion-header">
-				<button type="button" class="accordion-button collapsed"
-						data-bs-toggle="collapse" data-bs-target="#faqTwo"
-						aria-expanded="false" aria-controls="faqTwo">
-					Do we make a contract?
-				</button>
-			</h3>
-			<div class="accordion-collapse collapse" id="faqTwo" data-bs-parent="#faqAccordion">
-				<div class="accordion-body">
-					Absolutely. A contract protects us both and ensures that both parties have a good collaboration.
-				</div>
-			</div>
-		</div>
-		<div class="accordion-item">
-			<h3 class="accordion-header">
-				<button type="button" class="accordion-button collapsed"
-						data-bs-toggle="collapse" data-bs-target="#faqThree"
-						aria-expanded="false" aria-controls="faqThree">
-					How much do you charge for a website?
-				</button>
-			</h3>
-			<div class="accordion-collapse collapse" id="faqThree" data-bs-parent="#faqAccordion">
-				<div class="accordion-body">
-					There is no fixed price.
-					Every website is different and I’ll only be able to give an accurate offer once we’ve had a talk.
-				</div>
-			</div>
-		</div>
-		<div class="accordion-item">
-			<h3 class="accordion-header">
-				<button type="button" class="accordion-button collapsed"
-						data-bs-toggle="collapse" data-bs-target="#faqFour"
-						aria-expanded="false" aria-controls="faqFour">
-					Do you charge by the hour?
-				</button>
-			</h3>
-			<div class="accordion-collapse collapse" id="faqFour" data-bs-parent="#faqAccordion">
-				<div class="accordion-body">
-					I do not charge by the hour.
-					I prefer to eliminate the stress of counting the hours.
-					Instead, I charge a flat fee per project, regardless of duration.
-				</div>
-			</div>
-		</div>
-		<div class="accordion-item">
-			<h3 class="accordion-header">
-				<button type="button" class="accordion-button collapsed"
-						data-bs-toggle="collapse" data-bs-target="#faqFive"
-						aria-expanded="false" aria-controls="faqFive">
-					Are you working with a team?
-				</button>
-			</h3>
-			<div class="accordion-collapse collapse" id="faqFive" data-bs-parent="#faqAccordion">
-				<div class="accordion-body">
-					Not at the moment. I’m flying solo.
-				</div>
-			</div>
-		</div>
+
+	<div class="mb-3">
+		<h2 class="display-2">FAQ</h2>
+		<p>Before sending me a message, here are some things you might want to know</p>
+		<details open>
+			<summary class="fw-bold">What timezone are you in?</summary>
+			<p>I live in New York so EST (UTC-5)</p>
+		</details>
+		<details>
+			<summary class="fw-bold">Do we make a contract?</summary>
+			<p>
+				Absolutely. <br />
+				A contract protects us both and ensures that both parties have a good collaboration.
+			</p>
+		</details>
+		<details>
+			<summary class="fw-bold">How much do you charge for a website?</summary>
+			<p>
+				There is no fixed price.<br />
+				Every website is different and I’ll only be able to give an accurate offer once we’ve had a talk.
+			</p>
+		</details>
+		<details>
+			<summary class="fw-bold">Do you charge by the hour?</summary>
+			<p>
+				I do not charge by the hour.<br />
+				I prefer to eliminate the stress of counting the hours.<br />
+				Instead, I charge a flat fee per project, regardless of duration.
+			</p>
+		</details>
+		<details>
+			<summary class="fw-bold">Are you working with a team?</summary>
+			<p>Not at the moment. I’m flying solo.</p>
+		</details>
 	</div>
+
 	<h4 class="display-4">TITLE</h4>
 	<form method="post" asp-controller="Home" asp-action="Contact" class="p-3">
 		<div class="mb-3">
