@@ -21,8 +21,12 @@
 }
 
 body {
+    background-color: white;
+}
+
+.fox-bg {
     background-image: url("Images/bg_bggenerator_com.png");
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
